@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <<body>
+
+
+        <div id="app">
+            <input type="text" v-focus>
+            <button>搜索</button>
+        </div>
+        <script>
+            const app = Vue.createApp({
+
+            });
+
+            app.directive("focus", {
+                mounted(el) {
+                    el.focus();
+                }
+            })
+
+            app.mount("#app");
+        </script>
+        </body>
+
+</html>

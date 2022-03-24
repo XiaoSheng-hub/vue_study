@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <div id="app">
+        <input type="text" v-focus>
+        <button>搜索</button>
+        <h1></h1>
+    </div>
+    <script>
+        const app = Vue.createApp({
+
+        });
+
+        app.directive("focus", {
+            mounted(el) {
+                el.focus();
+            }
+        })
+
+        app.mount("#app");
+    </script>
+</body>
+
+</html>
