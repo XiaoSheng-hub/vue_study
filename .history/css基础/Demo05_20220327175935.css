@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    ;
+    padding: 0px;
+}
+
+.list .pic img {
+    width: 200px;
+    height: 150px;
+}
+/* 
+li::before,li::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.pic,.title{
+    width: 200px;
+    float: left;
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.list .pic img {
+    width: 200px;
+    height: 150px;
+}
+
+clear::before,li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pic{
+    width: 200px;
+    float: left;
+}
+
+.title{
+    width: 300px;
+    float: left;
+}
