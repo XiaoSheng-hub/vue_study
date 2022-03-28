@@ -1,0 +1,49 @@
+.header {
+    background-color: #FFFFFF;
+    height: 54px;
+}
+
+.header .header_content .logo{
+    float: left;
+}
+
+.header .header_content .nav li{
+    list-style: none;
+    float: left;
+    width: 60px;
+}
+.header .nav li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #959EB1;
+}
+
+.header .nav li a:hover{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: #0066FF;
+}
+
+.header .nav .active{
+
+}
+
+
+.container {
+    background-color: blue;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.content {
+    background-color: yellow;
+    width: 694px;
+    float: left;
+}
+
+.slide {
+    background-color: green;
+    width: 296px;
+    float: right;
+}

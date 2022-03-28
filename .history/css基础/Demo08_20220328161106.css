@@ -1,0 +1,20 @@
+.header {
+    background-color: red;
+    height: 52px;
+}
+
+.container {
+    background-color: blue;
+}
+
+.content {
+    background-color: yellow;
+    width: 694px;
+    float: left;
+}
+
+.slide {
+    background-color: green;
+    width: 296px;
+    f
+}

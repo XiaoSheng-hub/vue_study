@@ -1,0 +1,26 @@
+.header {
+    background-color: #FFF9F2;
+    height: 6px;
+}
+
+.header .logo{
+    float: left;
+}
+
+.container {
+    background-color: blue;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.content {
+    background-color: yellow;
+    width: 694px;
+    float: left;
+}
+
+.slide {
+    background-color: green;
+    width: 296px;
+    float: right;
+}

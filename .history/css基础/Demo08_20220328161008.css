@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+.header {
+    background-color: red;
+    height: 52px;
+}
+
+.container {
+    background-color: blue;
+}
+
+.content {
+    background-color: yellow;
+    width: 694px;
+
+}
+
+.slide {
+    background-color: green;
+    width: ;
+}

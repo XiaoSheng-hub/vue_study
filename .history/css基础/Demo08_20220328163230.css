@@ -1,0 +1,45 @@
+.header {
+    background-color: #FFFFFF;
+    height: 54px;
+}
+
+.header .logo{
+    float: left;
+}
+
+.header ul li{
+    list-style: none;
+    float: left;
+    width: 60px;
+}
+.header ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #959EB1;
+}
+
+.header ul li a:hover{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    bor
+}
+
+
+.container {
+    background-color: blue;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.content {
+    background-color: yellow;
+    width: 694px;
+    float: left;
+}
+
+.slide {
+    background-color: green;
+    width: 296px;
+    float: right;
+}

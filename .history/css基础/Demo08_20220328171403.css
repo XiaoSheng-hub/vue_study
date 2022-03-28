@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #F6F6F6;
+}
+
+.header {
+    background-color: #FFFFFF;
+    height: 54px;
+}
+
+.header .header_content {
+    width: 1200px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.header .header_content .logo {
+    float: left;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header .header_content .logo img {
+    width: 64px;
+    height: 30px;
+    margin: 11px auto;
+}
+
+.header .header_content .nav li {
+    list-style: none;
+    float: left;
+    width: 60px;
+    height: 50px;
+    padding: 0 15px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.header .header_content .nav .li4 {
+    list-style: none;
+    float: left;
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.header .header_content .nav li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #959EB1;
+}
+
+.header .header_content .nav li:hover {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 4px solid #0066FF;
+}
+
+.header .header_content .nav .active {
+    border-bottom: 4px solid #0066FF;
+}
+
+
+.container {
+    background-color: blue;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.container .content,
+.container .slide{
+    background-color: #FFFFFF;
+}
+
+.container.content {
+    width: 694px;
+    float: left;
+}
+
+.container .content .nav li {
+    list-style: none;
+    padding: 20px;
+}
+
+.container .content .nav li div .title,
+.container .content .nav li div .content {
+    margin-bottom: 10px;
+}
+
+.container .content .nav li {
+    border-bottom: 1px solid gray;
+}
+
+.slide {
+    background-color: green;
+    width: 296px;
+    float: right;
+}
