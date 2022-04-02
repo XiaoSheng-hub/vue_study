@@ -13,39 +13,43 @@
             padding: 0;
         }
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
         li {
             list-style: none;
         }
 
         .header {
-            width: 240px;
+            width: 400px;
             height: 200px;
-            margin: 20px auto;
+            margin: 0 auto;
             text-align: center;
+            border: 1px solid green;
+        }
+
+
+        .clear::before,
+        .clear::after {
+            content: "";
+            display: block;
+            clear: both;
         }
 
         .menu>li {
             float: left;
-            background-color: pink;
+            border: 1px solid red;
             height: 30px;
-            line-height: 30px;
             width: 80px;
         }
 
         .sub_menu>li {
-            background-color: green;
+            background-color: blue;
+            color: white;
             height: 0px;
             width: 80px;
             overflow: hidden;
             transition: height 1s;
         }
 
-        .menu>li:hover>.sub_menu>li {
+        .menu>li:hover .sub_menu>li {
             height: 30px;
         }
     </style>
@@ -53,29 +57,26 @@
 
 <body>
     <div class="header">
-        <ul class="menu">
-            <li>
-                <a href="#">年级</a>
+        <ul class="menu clear">
+            <li>年级
                 <ul class="sub_menu">
-                    <li><a href="#">一年级</a></li>
-                    <li><a href="#">二年级</a></li>
-                    <li><a href="#">三年级</a></li>
+                    <li>一年级</li>
+                    <li>二年级</li>
+                    <li>三年级</li>
                 </ul>
             </li>
-            <li>
-                <a href="#">学生</a>
+            <li>学生
                 <ul class="sub_menu">
-                    <li><a href="#">小红</a></li>
-                    <li><a href="#">小明</a></li>
-                    <li><a href="#">李华</a></li>
+                    <li>小明</li>
+                    <li>小红</li>
+                    <li>李华</li>
                 </ul>
             </li>
-            <li>
-                <a href="#">老师</a>
+            <li>老师
                 <ul class="sub_menu">
-                    <li><a href="#">张老师</a></li>
-                    <li><a href="#">李老师</a></li>
-                    <li><a href="#">王老师</a></li>
+                    <li>张老师</li>
+                    <li>李老师</li>
+                    <li>李华</li>
                 </ul>
             </li>
         </ul>
