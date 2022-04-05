@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo19</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: grid;
+            width: 800px;
+            margin: 0px auto;
+            /* height: 700px; */
+            border: 1px solid blue;
+            grid-template-columns: 600px 200px;
+            grid-auto-flow: column;
+            grid-template-rows: 80px 200px 200px 200px 50px;
+        }
+
+        .item {
+            background-color: red;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .first {
+            grid-column: 1 / 5;
+        }
+
+        .second {
+            grid-column: 1 / 4;
+        }
+
+        .third {
+            grid-column: 1 / 4;
+        }
+
+        .forth {
+            grid-column: 1 / 4;
+        }
+
+        .fifth {
+            grid-row: 2 / 5;
+        }
+
+        .six {
+            grid-column: 1 / 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item first">1</div>
+        <div class="item second">2</div>
+        <div class="item third">3</div>
+        <div class="item forth">4</div>
+        <div class="item fifth">5</div>
+        <div class="item six">6</div>
+    </div>
+</body>
+
+</html>
