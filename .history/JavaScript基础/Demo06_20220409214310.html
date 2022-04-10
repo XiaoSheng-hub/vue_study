@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo06</title>
+</head>
+
+<body>
+    <script>
+        var reg = new RegExp("123");
+        var reg = /123/;
+    </script>
+
+    <!-- <script>
+        var str = "XiaoSheng111@126.com";
+        var reg = /^\w{5,12}@126\.com$/;
+
+        if (reg.test(str)) {
+            console.log("通过验证");
+        } else {
+            console.log("验证失败");
+        }
+    </script> -->
+
+    <script>
+        var str = "2022-04-09";
+        var reg = /^(\d{4})-(\d{2})-(\d{2})$/;
+        var result = reg.exec(str);
+        console.log(result[1] + "年" + result[2] + "月" + result[3] + "日");
+    </script>
+</body>
+
+</html>
