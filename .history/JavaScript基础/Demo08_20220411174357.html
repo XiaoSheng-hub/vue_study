@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo08</title>
+</head>
+
+<body>
+    <script>
+        function fun(m, n) {
+            console.log(m);
+            console.log(n);
+            return m + n;
+        }
+
+        // console.log(fun());
+    </script>
+
+    <script>
+        function fun(m = 10, n = 20) {
+            return m + n;
+        }
+
+        // console.log(fun());
+    </script>
+
+    <script>
+        (function () {
+            // console.log("hello world")
+        })()
+    </script>
+
+    <script>
+        var str = "hello";
+        var num = 10;
+
+        // function fun1() {
+        //     var str = "world";
+
+        //     function fun2() {
+        //         console.log(str);
+        //         console.log(num);
+        //     }
+        //     fun2();
+        // }
+
+        // fun1();
+    </script>
+
+    <script>
+        // function fun1() {
+        //     let num1 = 10;
+        //     let num2 = 20;
+
+        //     function fun2() {
+        //         return num1 + num2;
+        //     }
+        //     return fun2;
+        // }
+
+        // const f = fun1();
+        // const result = f();
+        // console.log(result);
+    </script>
+
+    <script>
+        const fun1 = function (x) {
+            return x * x;
+        }
+
+        let result = fun1(2);
+        console.log(result);
+    </script>
+
+    <script>
+        const fun2 = (x) => {
+            return x * x;
+        }
+
+        console.log(fun2(2));
+    </script>
+
+    <script>
+        const fun3 = x => x * x;
+
+        console.log(fun3(2));
+    </script>
+
+    <script>
+        const cat = {
+            name: "miaomiao",
+            sayName: {
+                setInteval({})
+            }
+        }
+    </script>
+</body>
+
+</html>

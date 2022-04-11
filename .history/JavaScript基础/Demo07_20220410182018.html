@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo07</title>
+</head>
+
+<body>
+    <script>
+        let d = new Date();
+        let year = d.getFullYear();
+        let month = d.getMonth();
+        let date = d.getDate();
+        let result = `${year}年${month}月${date}日`;
+        // console.log(d + "" + month);
+    </script>
+
+    <script>
+        let [n, m] = [10, 20];
+        console.log(`n:${n},m:${m}`);
+
+        [n, m] = [m, n];
+        console.log(`n:${n},m:${m}`);
+    </script>
+
+    <script>
+        let {
+            name,
+            age
+        } = {
+            name: "xiaoming",
+            age: 18
+        };
+
+        console.log(`name:${name},age:${age}`);
+    </script>
+
+    <script>
+        let xm = {
+            name: "xiaoming",
+            age: 18
+        };
+
+        function getName(obj) {
+            return obj.name;
+        }
+
+        console.log())
+    </script>
+</body>
+
+</html>
