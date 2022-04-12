@@ -22,6 +22,10 @@
             transition: transform 0.3s;
         }
 
+        .container:hover {
+            /* transform: translate(-640px); */
+        }
+
         .container img {
             width: 640px;
             height: 320px;
@@ -29,7 +33,7 @@
 
         .btn {
             position: absolute;
-            bottom: 0px;
+            bottom: 10px;
         }
     </style>
 </head>
@@ -51,9 +55,10 @@
     <script>
         let container = document.querySelector(".container");
         let btnList = document.querySelectorAll(".btn button");
+        console.log(btnList);
         for (let i in btnList) {
             btnList[i].onclick = function () {
-                container.style.transform = `translate(${-640 * i}px)`;
+                container.style.transform = `translate(${}-640px)`;
             }
         }
     </script>

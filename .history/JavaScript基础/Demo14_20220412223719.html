@@ -19,7 +19,11 @@
             width: 1920px;
             height: 320px;
             display: flex;
-            transition: transform 0.3s;
+            transition: ;
+        }
+
+        .container:hover {
+            transform: translate(-640px);
         }
 
         .container img {
@@ -29,7 +33,6 @@
 
         .btn {
             position: absolute;
-            bottom: 0px;
         }
     </style>
 </head>
@@ -47,16 +50,6 @@
             <button>3</button>
         </div>
     </div>
-
-    <script>
-        let container = document.querySelector(".container");
-        let btnList = document.querySelectorAll(".btn button");
-        for (let i in btnList) {
-            btnList[i].onclick = function () {
-                container.style.transform = `translate(${-640 * i}px)`;
-            }
-        }
-    </script>
 
 </body>
 

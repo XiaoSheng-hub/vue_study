@@ -9,27 +9,19 @@
 
     <style>
         .swiper {
-            width: 640px;
-            height: 320px;
-            position: relative;
-            overflow: hidden;
+            width: 960px;
+            height: 480px;
         }
 
         .container {
-            width: 1920px;
-            height: 320px;
-            display: flex;
-            transition: transform 0.3s;
+            width: 960px;
+            height: 480px;
+            display: flow;
         }
 
         .container img {
-            width: 640px;
-            height: 320px;
-        }
-
-        .btn {
-            position: absolute;
-            bottom: 0px;
+            width: 960px;
+            height: 480px;
         }
     </style>
 </head>
@@ -47,16 +39,6 @@
             <button>3</button>
         </div>
     </div>
-
-    <script>
-        let container = document.querySelector(".container");
-        let btnList = document.querySelectorAll(".btn button");
-        for (let i in btnList) {
-            btnList[i].onclick = function () {
-                container.style.transform = `translate(${-640 * i}px)`;
-            }
-        }
-    </script>
 
 </body>
 
