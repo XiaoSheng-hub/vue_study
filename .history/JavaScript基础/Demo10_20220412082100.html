@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo10</title>
+</head>
+
+<body>
+    <h1 id="title">hello world</h1>
+    <button class="btn">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <script>
+        let h1 = document.getElementById("title");
+        let btns = document.getElementsByClassName("btn");
+
+        console.log(h1.innerHTML);
+        h1.innerHTML = "I love China";
+        console.log(h1.innerHTML);
+        for (let i in btns) {
+            btns[i].innerHTML = "";
+            console.log(btns[i].innerHTML);
+        }
+    </script>
+</body>
+
+</html>

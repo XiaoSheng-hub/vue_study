@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo11</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button>按钮</button>
+    <div class="box">
+        
+    </div>
+    <script>
+        let btn = document.querySelector("button");
+        btn.onclick = function () {
+            console.log("hello btn");
+        }
+
+        btn.onmouseenter = function () {
+            console.log("鼠标移入");
+        }
+
+        btn.onmouseleave = function () {
+            console.log("鼠标移出");
+        }
+    </script>
+
+    <script>
+        let box = document.querySelector(".box");
+        box.onmouseleaver = function () {
+            this.style.backgroundColor = "blredue";
+        }
+
+        box.onmouseenter = function () {
+            this.style.backgroundColor = "red";
+        }
+    </script>
+
+</body>
+
+</html>
