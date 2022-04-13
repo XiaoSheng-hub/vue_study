@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo18</title>
+    <style>
+        .picture-list img {
+            width: 320px;
+            height: 160px;
+        }
+
+        .big-picture img {
+            width: 640px;
+            height: 320px
+        }
+
+        .big-picture {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="picture-list">
+            <img src="../picture/java.jpg" alt="">
+            <img src="../picture/前端.jpg" alt="">
+            <img src="../picture/php.jpg" alt="">
+        </div>
+        <div class="big-picture">
+
+        </div>
+    </div>
+
+    <script>
+        let picList = document.querySelectorAll(".picture-list img");
+        let bigPic = document.querySelector(".big-picture")
+        let picMove = document.querySelector(".picture-list");
+        for (let i in picList) {
+            picList[i].onmouseenter = function () {
+                bigPic.innerHTML = `<img src = "${this.src}">`
+            }
+
+            picList[i].onmouseleave = function () {
+                bigPic.innerHTML = "";
+            }
+        }
+
+        let bigPicMove = document.querySelector(".big-picture img");
+        picMove.onmousemove = function (event) {
+            big-picture.style.
+        }
+    </script>
+</body>
+
+</html>

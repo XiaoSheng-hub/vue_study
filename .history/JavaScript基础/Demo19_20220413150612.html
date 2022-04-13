@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo19</title>
+    <style>
+        .big {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .medium {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .small {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big">
+        <div class="medium">
+            <div class="small">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let big = document.querySelector(".big");
+        let medium = document.querySelector(".medium");
+        let small = document.querySelector(".small");
+
+        big.addEventListener("click", function (e) {
+            console.log("hello big");
+        })
+
+        medium.addEventListener("click", function (e) {
+            console.log("hello medium");
+            e.stopPropagation();
+        })
+
+        small.addEventListener("click", function (e) {
+            console.log("hello small");
+            e.stopPropagation();
+        })
+    </script>
+</body>
+
+</html>
