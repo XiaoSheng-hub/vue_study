@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo23</title>
+</head>
+
+<body>
+    <script>
+        document.onkeydown = function (e) {
+            console.log(e.keyCode);
+            let code = e.keyCode;
+            switch (code) {
+                case 37:
+                    console.log("左");
+                    break;
+                case 38:
+                    console.log("上");
+                    break;
+                case 39:
+                    console.log("右");
+                case 40:
+                    console.log("下");
+            }
+        }
+    </script>
+</body>
+
+</html>

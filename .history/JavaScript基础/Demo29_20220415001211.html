@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo29</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>windows.onscroll</h1>
+    <!-- 防抖 -->
+    <script>
+        let timer = null;
+        window.onscroll = function () {
+            // timer（计时器）不为空时，则让它停止
+            if (timer != null) {
+                clearTimeout(timer);
+            }
+
+            // 鼠标滚动一次，则立马执行计时器
+            // 计时器启动时，timer就不为空，则立马停止，并且打印，并且将timer置为空
+            timer = setTimeout(() => {
+                console.log("hello world");
+                timer = null;
+            }, 500)
+        }
+    </script>
+
+    <!-- 节流 -->
+    <script>
+        let mark = true;
+        windows.onscroll = function () {
+            if (mark) {
+                setTimeout(() => {
+                    console.log("hello world");
+                    mark = true;
+                })
+            }
+            mark = false;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo27</title>
+</head>
+
+<body>
+    <button class="start">开始</button>
+    <button class="pause">暂停</button>
+    <button class="stop">结束</button>
+    <h1></h1>
+    <script>
+        let start = document.querySelector(".start");
+        let pause = document.querySelector(".pause");
+        let stop = document.querySelector(".stop");
+        let h1 = document.querySelector("h1");
+        let seconds = 0;
+        let ms = 0;
+        h1.innerHTML = `${seconds}:${ms}`;
+
+        start.onclick = function () {
+            setInterval(() => {
+                ++ms;
+            }, 1)
+        }
+    </script>
+</body>
+
+</html>
