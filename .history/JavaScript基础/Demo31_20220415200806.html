@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo30</title>
+    <title>Document</title>
     <style>
         body {
             height: 2000px;
@@ -26,41 +26,22 @@
 
     <script>
         let btn = document.querySelector("button");
-        btn.onclick = function () {
-            window.scrollTo(0, 0);
-        };
+
 
         // 防抖
         function debounce(fn) {
             let timer = null;
-
-            function eventFun() {
-                if (timer != null) {
-                    clearTimeout(timer);
-                }
-                timer = setTimeout(() => {
-                    fn();
-                    timer = null;
-                }, 500)
+            if (timer != null) {
+                clearTimeout(timer);
             }
-            return eventFun;
+
+            timer = setTimeout(() => {
+                fn();
+                timer = null;
+            }, 500)
         }
 
-        // 节流
-        function throttle(fn) {
-            let mark = true;
-
-            // 直接返回函数也可以
-            return function () {
-                if (mark) {
-                    setTimeout(() => {
-                        fn();
-                        mark = true;
-                    }, 500)
-                }
-                mark = false;
-            }
-        }
+        
 
         window.onscroll = debounce(() => {
             console.log("计数器");
@@ -69,7 +50,7 @@
             } else {
                 btn.style.display = "none";
             }
-        });
+        })
     </script>
 </body>
 

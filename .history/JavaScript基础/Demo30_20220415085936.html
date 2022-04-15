@@ -39,18 +39,18 @@
                     clearTimeout(timer);
                 }
                 timer = setTimeout(() => {
-                    fn();
+                    fun();
                     timer = null;
                 }, 500)
             }
-            return eventFun;
+
+            return eventFun();
         }
 
         // 节流
         function throttle(fn) {
             let mark = true;
 
-            // 直接返回函数也可以
             return function () {
                 if (mark) {
                     setTimeout(() => {
@@ -62,7 +62,7 @@
             }
         }
 
-        window.onscroll = debounce(() => {
+        window.onscroll = throttle(() => {
             console.log("计数器");
             if (document.documentElement.scrollTop > 0) {
                 btn.style.display = "block";

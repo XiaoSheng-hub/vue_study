@@ -25,51 +25,32 @@
     <button>⬆</button>
 
     <script>
+        console.log(document.documentElement.scrollTop);
+
         let btn = document.querySelector("button");
         btn.onclick = function () {
             window.scrollTo(0, 0);
         };
 
-        // 防抖
-        function debounce(fn) {
-            let timer = null;
-
-            function eventFun() {
-                if (timer != null) {
-                    clearTimeout(timer);
-                }
-                timer = setTimeout(() => {
-                    fn();
-                    timer = null;
-                }, 500)
+        let timer = null;
+        window.onscroll = function () {
+            if (timer != null) {
+                clearTimeout(timer);
             }
-            return eventFun;
-        }
 
-        // 节流
-        function throttle(fn) {
-            let mark = true;
+            timer = setTimeout(() => {
+                console.log("hello world");
+                timer = null;
+            }, 500)
 
-            // 直接返回函数也可以
-            return function () {
-                if (mark) {
-                    setTimeout(() => {
-                        fn();
-                        mark = true;
-                    }, 500)
-                }
-                mark = false;
-            }
-        }
-
-        window.onscroll = debounce(() => {
+            
             console.log("计数器");
             if (document.documentElement.scrollTop > 0) {
                 btn.style.display = "block";
-            } else {
+            } else if (document.documentElement.scrollTop > 0) {
                 btn.style.display = "none";
             }
-        });
+        }
     </script>
 </body>
 

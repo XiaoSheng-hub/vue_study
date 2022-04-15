@@ -39,22 +39,23 @@
                     clearTimeout(timer);
                 }
                 timer = setTimeout(() => {
-                    fn();
+                    fun();
                     timer = null;
                 }, 500)
             }
-            return eventFun;
         }
 
         // 节流
-        function throttle(fn) {
+        function throttle() {
             let mark = true;
 
-            // 直接返回函数也可以
-            return function () {
+            return function(){
+                
+            }
+            window.onscroll = function () {
                 if (mark) {
                     setTimeout(() => {
-                        fn();
+                        console.log("hello world");
                         mark = true;
                     }, 500)
                 }

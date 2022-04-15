@@ -19,6 +19,7 @@
     <script>
         let timer = null;
         window.onscroll = function () {
+            // timer（计时器）不为空时，则让它停止
             if (timer != null) {
                 clearTimeout(timer);
             }
