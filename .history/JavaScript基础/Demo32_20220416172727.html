@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo32</title>
+</head>
+
+<body>
+    <!-- <script>
+        function fun() {
+            console.log("hello world");
+        }
+
+        window.fun();
+    </script>
+
+    <script>
+        window.setTimeout(() => {
+            console.log("hello world!")
+        }, 1000)
+    </script> -->
+
+    <!-- <script>
+        let str = window.prompt("请输入内容:", "你好！");
+        console.log(str);
+    </script> -->
+
+    <!-- <script>
+        let result = window.confirm("是否删除该条数据？");
+        console.log(result);
+    </script> -->
+
+    <script>
+        // 生成【1,100】的随机数
+        let targetNumber = Math.floor(Math.random() * 100 + 1);
+
+        targetNumber = 99;
+
+        // 递归函数：在函数内部，再次调用
+        function guessNumber() {
+            let number = prompt("请输入数字:");
+            if (number == targetNumber) {
+                alert("恭喜你回答正确！");
+            } else if (number > targetNumber) {
+                alert("大于目标数字,请再猜一次");
+                guessNumber();
+            } else if (number < targetNumber) {
+                alert("小于目标数字,请再猜一次")
+                guessNumber();
+            } else {
+                alert("格式错误,请重新输入！")
+            }
+        }
+
+        guessNumber();
+    </script>
+</body>
+
+</html>
