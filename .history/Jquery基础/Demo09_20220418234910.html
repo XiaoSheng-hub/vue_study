@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo09</title>
+    <style>
+        img {
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imgList">
+        <img src="../picture/java.jpg" alt="">
+        <img src="../picture/前端.jpg" alt="">
+        <img src="../picture/php.jpg" alt="">
+    </div>
+    <div class="big-img">
+
+    </div>
+
+    <script src="../script/jquery.js"></script>
+    <script>
+        let bigImg = ["../picture/java.jpg",]
+        $(".imgList img").mousemove(function () {
+            let index = $(this).index();
+            let src = $(this)[1];
+            console.log(src);
+        })
+    </script>
+</body>
+
+</html>
