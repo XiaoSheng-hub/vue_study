@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var longestCommonPrefix = function (strs) {
+            let minLength = strs[1].length;
+            for (let i in strs) {
+                if (strs[i].length < minLength) {
+                    minLength = strs[i].length;
+                }
+            }
+
+            let str = [];
+
+            let bool = true;
+            let publicLength = 0;
+            for (let i = 0; i < minLength; i++) {
+                if (bool == false) {
+                    break;
+                }
+                for (let j = 0; j < strs.length - 1; j++) {
+                    if (strs[j].charAt(i) != strs[j + 1].charAt(i)) {
+                        bool = false;
+                    }
+                }
+
+                str.push()
+                publicLength = i;
+            }
+
+            for (let i = 0; i < publicLength; i++) {
+
+            }
+            return publicLength;
+        };
+
+        let strs = ["flsower", "flsow", "flsight"];
+        console.log(longestCommonPrefix(strs));
+    </script>
+</body>
+
+</html>
