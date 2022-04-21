@@ -64,6 +64,7 @@ router.get("/logout", async ctx =>{
     ctx.redirect("/");
 })
 
+})
 
 app.use(router.routes());
 

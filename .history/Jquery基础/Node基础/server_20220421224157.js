@@ -33,36 +33,6 @@ router.get("/login", async (ctx) => {
     await ctx.render("login.html")
 })
 
-// post请求
-router.post("/login", async ctx => {
-    let username = ctx.request.body.username;
-    let password = ctx.request.body.password;
-    if (username === "xiaoming" && password === "123456") {
-        ctx.session.user = "xiaoming"
-        // 重定向
-        ctx.redirect("/list");
-    } else {
-        ctx.redirect("/");
-    }
-})
-
-// 内容页
-router.get("/list", async (ctx) => {
-    // session里面有user,就渲染list页面
-    if (ctx.session.user) {
-        await ctx.render("list.html");
-    } else {
-        ctx.redirect("/");
-    }
-})
-
-// 注销
-router.get("/logout", async ctx =>{
-    // 清除session中的user值
-    ctx.session.user = "";
-    // 重定向到首页
-    ctx.redirect("/");
-})
 
 
 app.use(router.routes());

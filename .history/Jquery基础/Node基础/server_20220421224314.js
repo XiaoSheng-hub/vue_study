@@ -65,6 +65,36 @@ router.get("/logout", async ctx =>{
 })
 
 
+
+router.get("/test", async (ctx) => {
+    let count = ctx.cookies.get("count");
+    // 如果有存在cookie，则每次访问，cookie值都加1
+    if (count > 0) {
+        ++count;
+        ctx.cookies.set("count", count, {
+            // 设置cookie过期时间
+            maxAge: 2000,
+        })
+    } else {
+        // 如果没有cookie值，则说明初次访问，设为1
+        count = 1;
+        ctx.cookies.set("count", count);
+    }
+    ctx.body = count;
+})
+
+// 设置session页面
+router.get("/setSession", async (ctx) => {
+    ctx.session.user = "sessionUser";
+    ctx.body = "设置session页面";
+})
+
+// 获取session页面
+router.get("/getSession", async (ctx) => {
+    let user = ctx.session.user;
+    ctx.body = user;
+})
+
 app.use(router.routes());
 
 // 设置监听端口
