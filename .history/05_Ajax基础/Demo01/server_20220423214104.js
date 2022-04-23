@@ -1,6 +1,5 @@
 const Koa = require("koa");
 const router = require("koa-router")();
-const nunjucks = require("nunjucks");
 const static = require("koa-static");
 const views = require("koa-views");
 const parser = require("koa-parser");
@@ -14,10 +13,6 @@ app.use(views(__dirname + "/views", {
 }))
 
 let dataList = ["香蕉", "苹果", "鸭梨"];
-
-router.get("/", ctx => {
-    await ctx.render("index");
-})
 
 // get查询
 router.get("/fruits", ctx => {

@@ -15,10 +15,6 @@ app.use(views(__dirname + "/views", {
 
 let dataList = ["香蕉", "苹果", "鸭梨"];
 
-router.get("/", ctx => {
-    await ctx.render("index");
-})
-
 // get查询
 router.get("/fruits", ctx => {
     ctx.body = dataList;
