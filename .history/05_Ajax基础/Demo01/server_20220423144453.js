@@ -20,10 +20,11 @@ router.post("/fruits", ctx => {
 
 // put修改
 router.put("/fruits/:id", ctx => {
-    let id = ctx.params.id;
-    let fruit = ctx.request.body.fruit;
-    dataList.splice(id, 1, fruit);
-    ctx.body = dataList;
+    // let id = ctx.params.id;
+    // let fruit = ctx.request.body.fruit;
+    // dataList.splice(id, 1, fruit);
+    // ctx.body = dataList;
+    ctx.body.
 })
 
 // delete删除

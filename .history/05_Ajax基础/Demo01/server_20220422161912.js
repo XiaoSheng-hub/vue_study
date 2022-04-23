@@ -6,7 +6,7 @@ app.use(parser());
 
 let dataList = ["香蕉", "苹果", "鸭梨"];
 
-// get查询
+// 查询
 router.get("/fruits", ctx => {
     ctx.body = dataList;
 })
@@ -14,23 +14,7 @@ router.get("/fruits", ctx => {
 // post添加
 router.post("/fruits", ctx => {
     let fruit = ctx.request.body.fruit;
-    dataList.push(fruit);
-    ctx.body = dataList;
-})
-
-// put修改
-router.put("/fruits/:id", ctx => {
-    let id = ctx.params.id;
-    let fruit = ctx.request.body.fruit;
-    dataList.splice(id, 1, fruit);
-    ctx.body = dataList;
-})
-
-// delete删除
-router.delete("/fruits/:id", ctx => {
-    let id = ctx.params.id;
-    dataList.splice(id, 1);
-    ctx.body = dataList;
+    dataList.push
 })
 
 app.use(router.routes());

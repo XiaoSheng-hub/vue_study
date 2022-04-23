@@ -6,7 +6,7 @@ app.use(parser());
 
 let dataList = ["香蕉", "苹果", "鸭梨"];
 
-// get查询
+// 查询
 router.get("/fruits", ctx => {
     ctx.body = dataList;
 })
