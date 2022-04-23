@@ -34,18 +34,7 @@
 
         // 修改
         document.querySelector(".put").onclick = function () {
-            axios.put("/fruits/1", {
-                fruit: "西瓜"
-            }).then(res => {
-                console.log(res.data);
-            })
-        }
-
-        // 删除
-        document.querySelector(".delete").onclick = function () {
-            axios.delete("/fruits/0").then(res => {
-                console.log(res.data);
-            })
+            
         }
     </script>
 
