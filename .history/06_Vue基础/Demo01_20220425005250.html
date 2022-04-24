@@ -16,9 +16,9 @@
 
 <body>
     <div id="app">
-        <button @click="decrease">-</button>
-        <span>{{number}}</span>
-        <button @click="increase">+</button>
+        <button>-</button>
+        
+        <button>-</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -26,14 +26,12 @@
         new Vue({
             el: "#app",
             data: {
-                number: 0
+                message: "hello Vue!",
+                url: "../picture/java.jpg"
             },
             methods: {
-                increase() {
-                    this.number++;
-                },
-                decrease() {
-                    this.number--;
+                turn() {
+                    this.url = "../picture/php.jpg"
                 }
             }
         })
