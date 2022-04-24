@@ -14,8 +14,7 @@ app.use(views(__dirname + "/views", {
 }))
 
 router.get("/data", ctx => {
-    // 允许8080访问3000
-    ctx.set("Access-Control-Allow-Origin", "http://127.0.0.1:8080")
+    ctx.set()
     ctx.body = "hello world";
 })
 

@@ -12,6 +12,7 @@
     "axios": "^0.26.1",
     "jquery": "^3.6.0",
     "koa": "^2.13.4",
+    "koa-jsonp": "^2.0.2",
     "koa-parser": "^1.0.8",
     "koa-router": "^10.1.1",
     "koa-static": "^5.0.0",

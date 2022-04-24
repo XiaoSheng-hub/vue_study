@@ -4,7 +4,9 @@ const nunjucks = require("nunjucks");
 const static = require("koa-static");
 const views = require("koa-views");
 const parser = require("koa-parser");
+const jsonp = require("koa-jsonp");
 const app = new Koa();
+app.use(jsonp())
 app.use(parser());
 app.use(static(__dirname + "/public"));
 app.use(views(__dirname + "/views", {
@@ -14,8 +16,6 @@ app.use(views(__dirname + "/views", {
 }))
 
 router.get("/data", ctx => {
-    // 允许8080访问3000
-    ctx.set("Access-Control-Allow-Origin", "http://127.0.0.1:8080")
     ctx.body = "hello world";
 })
 
