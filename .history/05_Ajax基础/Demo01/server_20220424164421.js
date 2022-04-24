@@ -13,9 +13,7 @@ app.use(views(__dirname + "/views", {
     }
 }))
 
-router.get("/data", ctx => {
-    ctx.body = "hello world";
-})
+router.
 
 
 app.use(router.routes());

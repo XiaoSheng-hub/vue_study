@@ -29,10 +29,10 @@
         $(".post").click(function () {
             $.ajax({
                 url: "/fruits",
-                data: {
-                    fruit: "西瓜"
-                },
-                type: "post",
+                data:{
+                    
+                }
+                type: "get",
             }).done(res => {
                 // 这种的res就是数据,不用res.data
                 console.log(res);
